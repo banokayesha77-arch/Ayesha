@@ -1,55 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ayesha - Portfolio</title>
+<title>Ayesha's Portfolio</title>
 <style>
-body { margin:0; font-family: Arial; background:#fff6f8; }
-.top-section { display:flex; flex-wrap:wrap; gap:20px; padding:20px; }
-.about { flex:2; }
-.education-card { flex:1; background:#ffd6e0; border-radius:20px; padding:20px; }
-.section-title { text-align:center; font-size:32px; margin:40px 0 20px 0; }
-.projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+body { font-family: Arial; margin:0; padding:0; background:#fff5f7; }
+.navbar { display:flex; justify-content:space-between; padding:15px 30px; background:white; }
+.navbar a { margin:0 10px; text-decoration:none; color:#333; }
+.hire-btn { background:#e9406a; color:white; padding:8px 15px; border-radius:20px; }
+.hero { display:flex; justify-content:space-around; align-items:center; padding:50px; background:white; }
+.hero-text h1 { font-size:40px; }
+.hero-text span { color:#e9406a; }
+.hero-img { background:#ffe6eb; padding:20px; border-radius:20px; }
+.hero-img img { width:280px; border-radius:15px; }
+.btn { background:#e9406a; color:white; padding:10px 20px; border-radius:20px; border:none; margin-right:10px; text-decoration:none; }
+.top-section { display:flex; justify-content:center; gap:20px; padding:40px; flex-wrap:wrap; }
+.about, .education-card { background:white; padding:20px; border-radius:15px; width:350px; box-shadow:0 4px 15px rgba(0,0,0,0.05); }
+.section-title { text-align:center; margin-top:40px; }
+.projects { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:20px; }
 .project-card { background:white; border-radius:20px; width:280px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.05); }
 .project-top { background:#ffd6e0; padding:20px; text-align:center; }
 .project-body { padding:20px; text-align:center; }
-.tag { display:inline-block; background:#ffe3ea; padding:5px 12px; border-radius:20px; margin:5px; font-size:13px; }
+.tag { display:inline-block; background:#ffe3ea; padding:5px 12px; border-radius:20px; margin:5px; font-size:12px; }
 .footer { background:#ffc2d1; margin-top:50px; padding:30px; display:flex; flex-wrap:wrap; justify-content:space-between; }
-.btn { background:#e9406a; color:white; padding:12px 25px; border:none; border-radius:12px; }
 </style>
 </head>
 <body>
 
+<div class="navbar">
+<div>✦ Ayesha</div>
+<div><a href="#">Home</a> <a href="#">About</a> <a href="#">Skills</a> <a href="#">Projects</a> <a href="#">Contact</a> <a href="#" class="hire-btn">Hire Me</a></div>
+</div>
+
+<div class="hero">
+<div class="hero-text">
+<h1>Hi, I'm <span>Ayesha</span></h1>
+<p style="color:#e9406a; font-weight:bold;">Web Developer Student</p>
+<p>Creating clean, responsive, and user-friendly web experiences. Currently pursuing Computer Science & learning modern web development.</p>
+<br>
+<a href="#" class="btn">↗ View Projects</a>
+<a href="#" class="btn" style="background:white; color:#333; border:1px solid #ddd;">Contact Me</a>
+</div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Ayesha Profile">
+</div>
+</div>
+
 <div class="top-section">
-  <div class="about">
-    <h1>About Me</h1>
-    <p>I'm a passionate Web Developer Student currently studying Computer Science. I love building web applications that are clean, accessible, and user-focused.</p>
-  </div>
-  <div class="education-card">
-    <h3>🎓 Education B.Sc. in biology Science</h3>
-    <p>Student • 2023 - Present<br>Focused on Frontend Development, UI/UX Design, and Web Technologies</p>
-  </div>
+<div class="about">
+<h1>About Me</h1>
+<p>I'm a passionate Web Developer Student currently studying Computer Science. I love building web applications that are clean, accessible, and user-focused.</p>
+</div>
+<div class="education-card">
+<h3>🎓 Education B.Sc. in biology Science</h3>
+<p>Student • 2023 - Present<br>Focused on Frontend Development, UI/UX Design, and Web Technologies</p>
+</div>
 </div>
 
 <h2 class="section-title">Skills</h2>
 <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-  <div style="background:white; padding:20px; border-radius:15px;"><b>HTML</b><br>90% - Semantic & Accessible</div>
-  <div style="background:white; padding:20px; border-radius:15px;"><b>CSS</b><br>85% - Responsive Design</div>
-  <div style="background:white; padding:20px; border-radius:15px;"><b>JavaScript</b><br>80% - Interactive</div>
+<div style="background:white; padding:20px; border-radius:15px;"><b>HTML</b><br>90% - Semantic & Accessible</div>
+<div style="background:white; padding:20px; border-radius:15px;"><b>CSS</b><br>85% - Responsive Design</div>
+<div style="background:white; padding:20px; border-radius:15px;"><b>JavaScript</b><br>80% - Interactive</div>
 </div>
 
 <h2 class="section-title">Projects</h2>
 <div class="projects">
-  <div class="project-card"><div class="project-top">Portfolio Website</div><div class="project-body"><h3>Personal Portfolio</h3><p>Responsive personal portfolio built with HTML, CSS, and JavaScript.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></div>
-  <div class="project-card"><div class="project-top">To-Do App</div><div class="project-body"><h3>Task Manager App</h3><p>A to-do list application with add, delete, filter tasks and dark mode.</p><span class="tag">JavaScript</span><span class="tag">Local Storage</span></div></div>
-  <div class="project-card"><div class="project-top">Weather App</div><div class="project-body"><h3>Weather Dashboard</h3><p>Weather forecast app using API to display real-time weather data.</p><span class="tag">JavaScript</span><span class="tag">API Integration</span></div></div>
+<div class="project-card"><div class="project-top">Portfolio Website</div><div class="project-body"><h3>Personal Portfolio</h3><p>Responsive personal portfolio</p><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+<div class="project-card"><div class="project-top">Walee Project</div><div class="project-body"><h3>Walee Influencer</h3><p>Influencer marketing design</p><span class="tag">UI/UX</span></div></div>
 </div>
 
 <div class="footer">
-  <div>📧 ayesha.banokayesha@email.com<br>📍 Gwadar, Pakistan</div>
-  <div><b>Get in Touch</b><br>Let's work together!</div>
-  <div><button class="btn">Send Message ✈️</button></div>
+<div>© 2026 Ayesha - Web Developer Student</div>
+<div>Made with love</div>
 </div>
 
 </body>
