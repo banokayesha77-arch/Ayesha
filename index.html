@@ -1,78 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayesha's Portfolio</title>
 <style>
-body { font-family: Arial; margin:0; padding:0; background:#fff5f7; }
-.navbar { display:flex; justify-content:space-between; padding:15px 30px; background:white; }
-.navbar a { margin:0 10px; text-decoration:none; color:#333; }
-.hire-btn { background:#e9406a; color:white; padding:8px 15px; border-radius:20px; }
-.hero { display:flex; justify-content:space-around; align-items:center; padding:50px; background:white; }
-.hero-text h1 { font-size:40px; }
-.hero-text span { color:#e9406a; }
-.hero-img { background:#ffe6eb; padding:20px; border-radius:20px; }
-.hero-img img { width:280px; border-radius:15px; }
-.btn { background:#e9406a; color:white; padding:10px 20px; border-radius:20px; border:none; margin-right:10px; text-decoration:none; }
-.top-section { display:flex; justify-content:center; gap:20px; padding:40px; flex-wrap:wrap; }
-.about, .education-card { background:white; padding:20px; border-radius:15px; width:350px; box-shadow:0 4px 15px rgba(0,0,0,0.05); }
-.section-title { text-align:center; margin-top:40px; }
-.projects { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:20px; }
-.project-card { background:white; border-radius:20px; width:280px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.05); }
-.project-top { background:#ffd6e0; padding:20px; text-align:center; }
-.project-body { padding:20px; text-align:center; }
-.tag { display:inline-block; background:#ffe3ea; padding:5px 12px; border-radius:20px; margin:5px; font-size:12px; }
-.footer { background:#ffc2d1; margin-top:50px; padding:30px; display:flex; flex-wrap:wrap; justify-content:space-between; }
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#fff;color:#333}
+.container{max-width:1100px;margin:auto;padding:20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:40px 20px}
+.header-text h1{font-size:42px} .header-text h1 span{color:#e84393}
+.header-img{width:220px;height:220px;background:#ffe6ef;border-radius:12px;overflow:hidden}
+.header-img img{width:100%;height:100%;object-fit:cover}
+.about-edu{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:30px}
+.card{background:#fff6f8;border:1px solid #ffd6e0;border-radius:12px;padding:20px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.project-card{background:#fff6f8;border:1px solid #ffd6e0;border-radius:12px;overflow:hidden}
+.project-top{background:#ffe6ef;padding:30px;text-align:center;color:#e84393;font-weight:600}
+.project-body{padding:20px;text-align:center}
+.tag{background:#fff;border:1px solid #ffd6e0;padding:4px 8px;border-radius:10px;font-size:10px;margin:2px;display:inline-block}
+.contact{background:#fff0f4;border-radius:12px;padding:30px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:40px}
+.btn{background:#e84393;color:#fff;border:none;padding:10px 18px;border-radius:20px}
+footer{text-align:center;padding:20px;background:#2d2d2d;color:#fff;margin-top:30px}
+@media(max-width:768px){header{flex-direction:column-reverse}.about-edu,.skills-grid,.contact{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<div class="navbar">
-<div>✦ Ayesha</div>
-<div><a href="#">Home</a> <a href="#">About</a> <a href="#">Skills</a> <a href="#">Projects</a> <a href="#">Contact</a> <a href="#" class="hire-btn">Hire Me</a></div>
-</div>
-
-<div class="hero">
-<div class="hero-text">
+<div class="container">
+<header>
+<div class="header-text">
 <h1>Hi, I'm <span>Ayesha</span></h1>
-<p style="color:#e9406a; font-weight:bold;">Web Developer Student</p>
-<p>Creating clean, responsive, and user-friendly web experiences. Currently pursuing Computer Science & learning modern web development.</p>
+<p>Web Developer | B.Sc. in Biology Student | UI/UX Enthusiast</p>
+</div>
+<div class="header-img"><img src="https://via.placeholder.com/300/ffe6ef/e84393?text=Ayesha"></div>
+</header>
+
+<div class="about-edu">
+<div class="card">
+<h2 style="text-align:center">About Me</h2>
+<p style="font-size:13px">I'm a passionate Web Development Student currently studying Computer Science. I love building web applications that are clean, accessible, and user-focused.</p>
 <br>
-<a href="#" class="btn">↗ View Projects</a>
-<a href="#" class="btn" style="background:white; color:#333; border:1px solid #ddd;">Contact Me</a>
+<span style="background:#ffe6ef;padding:5px 10px;border-radius:15px;font-size:12px">📘 HTML 90% • Semantic & Accessible</span>
+<span style="background:#ffe6ef;padding:5px 10px;border-radius:15px;font-size:12px">🎨 CSS 85% • Responsive Design</span>
 </div>
-<div class="hero-img">
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Ayesha Profile">
-</div>
-</div>
-
-<div class="top-section">
-<div class="about">
-<h1>About Me</h1>
-<p>I'm a passionate Web Developer Student currently studying Computer Science. I love building web applications that are clean, accessible, and user-focused.</p>
-</div>
-<div class="education-card">
-<h3>🎓 Education B.Sc. in biology Science</h3>
-<p>Student • 2023 - Present<br>Focused on Frontend Development, UI/UX Design, and Web Technologies</p>
+<div class="card">
+<h3>🎓 Education</h3>
+<p style="font-size:13px"><b>B.Sc. in biology Science</b><br>Student • 2023 - Present<br>Focused on Frontend Development, UI/UX Design, and Web Technologies</p>
 </div>
 </div>
 
-<h2 class="section-title">Skills</h2>
-<div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-<div style="background:white; padding:20px; border-radius:15px;"><b>HTML</b><br>90% - Semantic & Accessible</div>
-<div style="background:white; padding:20px; border-radius:15px;"><b>CSS</b><br>85% - Responsive Design</div>
-<div style="background:white; padding:20px; border-radius:15px;"><b>JavaScript</b><br>80% - Interactive</div>
+<h2 style="text-align:center;margin:40px 0 20px">Skills</h2>
+<div class="skills-grid">
+<div class="project-card">
+<div class="project-top">📁 Portfolio Website</div>
+<div class="project-body"><h3>Personal Portfolio</h3><p style="font-size:12px">Responsive personal portfolio built with HTML, CSS, and JavaScript.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+</div>
+<div class="project-card">
+<div class="project-top">📝 To-Do App</div>
+<div class="project-body"><h3>Task Manager App</h3><p style="font-size:12px">A to-do list application with add, delete, filter tasks and dark mode.</p><span class="tag">JavaScript</span><span class="tag">Local Storage</span></div>
+</div>
+<div class="project-card">
+<div class="project-top">🌤️ Weather App</div>
+<div class="project-body"><h3>Weather Dashboard</h3><p style="font-size:12px">Weather forecast app using API to display real-time weather data.</p><span class="tag">JavaScript</span><span class="tag">API Integration</span></div>
+</div>
 </div>
 
-<h2 class="section-title">Projects</h2>
-<div class="projects">
-<div class="project-card"><div class="project-top">Portfolio Website</div><div class="project-body"><h3>Personal Portfolio</h3><p>Responsive personal portfolio</p><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
-<div class="project-card"><div class="project-top">Walee Project</div><div class="project-body"><h3>Walee Influencer</h3><p>Influencer marketing design</p><span class="tag">UI/UX</span></div></div>
+<div class="contact">
+<div><p style="font-size:13px">📧 Email<br><b>ayesha.banokayesha@email.com</b></p><p style="font-size:13px;margin-top:10px">📍 Location<br>Gwadar, Pakistan</p></div>
+<div style="text-align:center"><h3>Get in Touch</h3><p style="font-size:12px">Let's work together! Feel free to reach out for collaborations.</p></div>
+<div style="text-align:right"><button class="btn">Send Message →</button></div>
 </div>
-
-<div class="footer">
-<div>© 2026 Ayesha - Web Developer Student</div>
-<div>Made with love</div>
 </div>
-
+<footer>© 2024 ayesha • Built with HTML, CSS & JavaScript • Deployed on Vercel</footer>
 </body>
 </html>
